@@ -9,6 +9,7 @@ import XCTest
 @testable import VIPER_Simpsons
 
 final class QuotesPresenterTests: XCTestCase {
+	
 	var interactorMock: QuotesInteractorMock!
 	var routerMock: QuotesRouterMock!
 	var presenter: QuotesPresenter!
@@ -42,7 +43,7 @@ final class QuotesPresenterTests: XCTestCase {
 		}
 
 		//assert
-		XCTAssert(isLoadQuotesCalled)
+		XCTAssertTrue(isLoadQuotesCalled)
 	}
 
 	func testGetNumberOfQuotesInSection() {
@@ -56,7 +57,7 @@ final class QuotesPresenterTests: XCTestCase {
 		let _ = presenter.getNumberOfQuotesInSection()
 
 		//assert
-		XCTAssert(isGetNumberOfQuotesInSectionCalled)
+		XCTAssertTrue(isGetNumberOfQuotesInSectionCalled)
 	}
 
 	func testQuoteText() {
@@ -71,7 +72,7 @@ final class QuotesPresenterTests: XCTestCase {
 		let _ = presenter.quoteText(indexPath: testIndexPath)
 
 		//assert
-		XCTAssert(isQuoteTextCalled)
+		XCTAssertTrue(isQuoteTextCalled)
 	}
 
 	func testDidSelectRowAt() {
@@ -86,6 +87,6 @@ final class QuotesPresenterTests: XCTestCase {
 		presenter.didSelectRowAt(index: testIndex) { }
 
 		//assert
-		XCTAssert(isDidSelectRowAtCalled)
+		XCTAssertTrue(isDidSelectRowAtCalled)
 	}
 }

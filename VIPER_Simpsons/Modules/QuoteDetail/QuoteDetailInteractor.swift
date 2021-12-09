@@ -11,7 +11,7 @@ import SDWebImage
 final class QuoteDetailInteractor: InteractorQuoteDetailProtocol {
 	//MARK: Properties
 	internal let quote: Quote?
-	private var serviceLocator: ServiceLocatorProtocol!
+	private var serviceLocator: ServiceLocatorProtocol
 
 	//MARK: Init
 	init(quote: Quote, serviceLocator: ServiceLocatorProtocol) {

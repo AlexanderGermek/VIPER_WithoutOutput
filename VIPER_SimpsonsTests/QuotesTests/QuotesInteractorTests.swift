@@ -14,8 +14,8 @@ final class QuotesInteractorTests: XCTestCase {
 
 	override func setUp() {
 		super.setUp()
-		interactor = QuotesInteractor()
 		serviceLocator = ServiceLocatorMock()
+		interactor = QuotesInteractor(serviceLocator: serviceLocator)
 	}
 
 	override func tearDown() {
@@ -25,8 +25,20 @@ final class QuotesInteractorTests: XCTestCase {
 	}
 
 	func testT() {
-		let quotes: [Quote] = [.init(quote: "quote", character: "character", image: "image"),
-							   .init(quote: "quote2", character: "character2", image: "image2")]
+		//let quotes: [Quote] = [.init(quote: "quote", character: "character", image: "image"),
+			//				   .init(quote: "quote2", character: "character2", image: "image2")]
+
+//		var testQuotes: [Quote] = []
+//		var testError: Error?
+
+//		serviceLocator.apiCaller.getSimpsonQuotes(count: 10) { (result) in
+//			switch result {
+//			case .success(let quotes):
+//				testQuotes = quotes
+//			case .failure(let error):
+//				testError = error
+//			}
+//		}
 
 		let index = 1
 		interactor.checkQuote(at: index) { (quote) in

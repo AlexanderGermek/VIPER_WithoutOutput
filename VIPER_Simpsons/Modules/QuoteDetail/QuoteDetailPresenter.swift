@@ -8,17 +8,17 @@
 import Foundation
 
 final class QuoteDetailPresenter: PresenterQuoteDetailProtocol {
-	//MARK: Properties
+	//MARK: - Properties
 	var interactor: InteractorQuoteDetailProtocol?
 	var router: RouterQuoteDetailProtocol?
 
-	//MARK: Init
+	//MARK: - Init
 	init(interactor: InteractorQuoteDetailProtocol, router: RouterQuoteDetailProtocol) {
 		self.interactor = interactor
 		self.router 	= router
 	}
 
-	//MARK: didLoadView
+	//MARK: - didLoadView
 	func didLoadView(completion: @escaping ((QuoteDetailViewModel) -> Void)) {
 		interactor?.getQuoteData(completion: completion)
 	}

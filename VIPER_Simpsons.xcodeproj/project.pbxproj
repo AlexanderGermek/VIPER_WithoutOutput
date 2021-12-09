@@ -16,11 +16,17 @@
 		8820EA4C2761F979006BE99F /* QuotesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA4B2761F979006BE99F /* QuotesInteractorTests.swift */; };
 		8820EA542761F9A6006BE99F /* ServiceLocatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA532761F9A6006BE99F /* ServiceLocatorMock.swift */; };
 		8820EA5C276202A0006BE99F /* QuotesDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA5B276202A0006BE99F /* QuotesDetailPresenterTests.swift */; };
+		8820EA6227622799006BE99F /* APICallerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA6127622799006BE99F /* APICallerMock.swift */; };
+		8820EA6727622DA4006BE99F /* ImageDataServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA6627622DA4006BE99F /* ImageDataServiceMock.swift */; };
+		8820EA6D27624639006BE99F /* QuotesDetailIntercatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA6C27624639006BE99F /* QuotesDetailIntercatorMock.swift */; };
+		8820EA7527624921006BE99F /* QuotesDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA7427624921006BE99F /* QuotesDetailRouterMock.swift */; };
+		8820EA7A27625DF9006BE99F /* QuotesDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA7927625DF9006BE99F /* QuotesDetailInteractorTests.swift */; };
+		8820EA852762625C006BE99F /* ImageDataServiceMockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */; };
+		8820EA9227627AA4006BE99F /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA9127627AA4006BE99F /* ServicesTests.swift */; };
 		8852DDE12753DE9E00B2F0AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DDE02753DE9E00B2F0AA /* AppDelegate.swift */; };
 		8852DDE32753DE9E00B2F0AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DDE22753DE9E00B2F0AA /* SceneDelegate.swift */; };
 		8852DDEA2753DE9F00B2F0AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8852DDE92753DE9F00B2F0AA /* Assets.xcassets */; };
 		8852DDED2753DE9F00B2F0AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8852DDEB2753DE9F00B2F0AA /* LaunchScreen.storyboard */; };
-		8852DDF82753DE9F00B2F0AA /* VIPER_SimpsonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DDF72753DE9F00B2F0AA /* VIPER_SimpsonsTests.swift */; };
 		8852DE032753DE9F00B2F0AA /* VIPER_SimpsonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DE022753DE9F00B2F0AA /* VIPER_SimpsonsUITests.swift */; };
 		8852DE332753DFCA00B2F0AA /* QuotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DE282753DFCA00B2F0AA /* QuotesInteractor.swift */; };
 		8852DE342753DFCA00B2F0AA /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DE292753DFCA00B2F0AA /* QuotesViewController.swift */; };
@@ -72,6 +78,13 @@
 		8820EA4B2761F979006BE99F /* QuotesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesInteractorTests.swift; sourceTree = "<group>"; };
 		8820EA532761F9A6006BE99F /* ServiceLocatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocatorMock.swift; sourceTree = "<group>"; };
 		8820EA5B276202A0006BE99F /* QuotesDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailPresenterTests.swift; sourceTree = "<group>"; };
+		8820EA6127622799006BE99F /* APICallerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallerMock.swift; sourceTree = "<group>"; };
+		8820EA6627622DA4006BE99F /* ImageDataServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataServiceMock.swift; sourceTree = "<group>"; };
+		8820EA6C27624639006BE99F /* QuotesDetailIntercatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailIntercatorMock.swift; sourceTree = "<group>"; };
+		8820EA7427624921006BE99F /* QuotesDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailRouterMock.swift; sourceTree = "<group>"; };
+		8820EA7927625DF9006BE99F /* QuotesDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailInteractorTests.swift; sourceTree = "<group>"; };
+		8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataServiceMockProtocol.swift; sourceTree = "<group>"; };
+		8820EA9127627AA4006BE99F /* ServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
 		8852DDDD2753DE9E00B2F0AA /* VIPER_Simpsons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_Simpsons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8852DDE02753DE9E00B2F0AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8852DDE22753DE9E00B2F0AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +92,6 @@
 		8852DDEC2753DE9F00B2F0AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8852DDEE2753DE9F00B2F0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8852DDF32753DE9F00B2F0AA /* VIPER_SimpsonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_SimpsonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8852DDF72753DE9F00B2F0AA /* VIPER_SimpsonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_SimpsonsTests.swift; sourceTree = "<group>"; };
 		8852DDF92753DE9F00B2F0AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8852DDFE2753DE9F00B2F0AA /* VIPER_SimpsonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_SimpsonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8852DE022753DE9F00B2F0AA /* VIPER_SimpsonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_SimpsonsUITests.swift; sourceTree = "<group>"; };
@@ -145,9 +157,12 @@
 			isa = PBXGroup;
 			children = (
 				8809E8C2275FDAC400268342 /* QuotesPresenterMock.swift */,
+				8820EA6127622799006BE99F /* APICallerMock.swift */,
 				8809E8CA275FDE0900268342 /* QuotesInteractorMock.swift */,
-				8809E8E2275FEF9400268342 /* QuotesRouterMock.swift */,
 				8820EA532761F9A6006BE99F /* ServiceLocatorMock.swift */,
+				8809E8E2275FEF9400268342 /* QuotesRouterMock.swift */,
+				8820EA6627622DA4006BE99F /* ImageDataServiceMock.swift */,
+				8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -155,6 +170,7 @@
 		8809E8E7275FF46100268342 /* QuotesTests */ = {
 			isa = PBXGroup;
 			children = (
+				8809E8C1275FD91F00268342 /* Mocks */,
 				8809E8CF275FE05E00268342 /* QuotesViewControllerTests.swift */,
 				8809E8D7275FEEDD00268342 /* QuotesPresenterTests.swift */,
 				8820EA4B2761F979006BE99F /* QuotesInteractorTests.swift */,
@@ -165,9 +181,20 @@
 		8809E8E8275FF46F00268342 /* QuotesDetailTests */ = {
 			isa = PBXGroup;
 			children = (
+				8820EA6B27623FAC006BE99F /* Mocks */,
 				8820EA5B276202A0006BE99F /* QuotesDetailPresenterTests.swift */,
+				8820EA7927625DF9006BE99F /* QuotesDetailInteractorTests.swift */,
 			);
 			path = QuotesDetailTests;
+			sourceTree = "<group>";
+		};
+		8820EA6B27623FAC006BE99F /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				8820EA6C27624639006BE99F /* QuotesDetailIntercatorMock.swift */,
+				8820EA7427624921006BE99F /* QuotesDetailRouterMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		8852DDD42753DE9E00B2F0AA = {
@@ -210,10 +237,9 @@
 		8852DDF62753DE9F00B2F0AA /* VIPER_SimpsonsTests */ = {
 			isa = PBXGroup;
 			children = (
+				8820EA9127627AA4006BE99F /* ServicesTests.swift */,
 				8809E8E7275FF46100268342 /* QuotesTests */,
 				8809E8E8275FF46F00268342 /* QuotesDetailTests */,
-				8809E8C1275FD91F00268342 /* Mocks */,
-				8852DDF72753DE9F00B2F0AA /* VIPER_SimpsonsTests.swift */,
 				8852DDF92753DE9F00B2F0AA /* Info.plist */,
 			);
 			path = VIPER_SimpsonsTests;
@@ -504,15 +530,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8852DDF82753DE9F00B2F0AA /* VIPER_SimpsonsTests.swift in Sources */,
+				8820EA6227622799006BE99F /* APICallerMock.swift in Sources */,
 				8809E8D0275FE05E00268342 /* QuotesViewControllerTests.swift in Sources */,
 				8820EA542761F9A6006BE99F /* ServiceLocatorMock.swift in Sources */,
 				8809E8C3275FDAC400268342 /* QuotesPresenterMock.swift in Sources */,
 				8809E8E3275FEF9400268342 /* QuotesRouterMock.swift in Sources */,
 				8820EA5C276202A0006BE99F /* QuotesDetailPresenterTests.swift in Sources */,
 				8820EA4C2761F979006BE99F /* QuotesInteractorTests.swift in Sources */,
+				8820EA6D27624639006BE99F /* QuotesDetailIntercatorMock.swift in Sources */,
+				8820EA9227627AA4006BE99F /* ServicesTests.swift in Sources */,
 				8809E8D8275FEEDD00268342 /* QuotesPresenterTests.swift in Sources */,
+				8820EA852762625C006BE99F /* ImageDataServiceMockProtocol.swift in Sources */,
+				8820EA7A27625DF9006BE99F /* QuotesDetailInteractorTests.swift in Sources */,
 				8809E8CB275FDE0900268342 /* QuotesInteractorMock.swift in Sources */,
+				8820EA6727622DA4006BE99F /* ImageDataServiceMock.swift in Sources */,
+				8820EA7527624921006BE99F /* QuotesDetailRouterMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,7 @@ final class QuotesViewControllerTests: XCTestCase {
 		view.viewDidLoad()
 
 		//assert
-		XCTAssert(isDidLoadViewCalled)
+		XCTAssertTrue(isDidLoadViewCalled)
 	}
 
 	func testRefreshControlAction() {
@@ -50,22 +50,22 @@ final class QuotesViewControllerTests: XCTestCase {
 		view.refreshControlAction()
 
 		//assert
-		XCTAssert(isRefreshControlActionCalled)
+		XCTAssertTrue(isRefreshControlActionCalled)
 	}
 
 	func testNumberOfRowsInSection() {
 		//arrange
-//		var isNumberOfRowsInSectionCalled = false
-//		presenterMock.getNumberOfQuotesInSectionStub = { closure in
-//			isNumberOfRowsInSectionCalled = true
-//			return closure
-//		}
+		var isNumberOfRowsInSectionCalled = false
+		presenterMock.getNumberOfQuotesInSectionStub = {
+			isNumberOfRowsInSectionCalled = true
+			return 0
+		}
 
 		//act
-		//view.tableView(UITableView(), numberOfRowsInSection: 3)
+		let _ = view.tableView(UITableView(), numberOfRowsInSection: 3)
 
 		//assert
-		//XCTAssert(isNumberOfRowsInSectionCalled)
+		XCTAssertTrue(isNumberOfRowsInSectionCalled)
 
 	}
 
@@ -82,7 +82,7 @@ final class QuotesViewControllerTests: XCTestCase {
 		let _ = view.tableView(UITableView(), cellForRowAt: indexPath)
 
 		//assert
-		XCTAssert(isQuoteTextCalled)
+		XCTAssertTrue(isQuoteTextCalled)
 	}
 
 	func testDidSelectDeselectRowAt() {
@@ -102,7 +102,7 @@ final class QuotesViewControllerTests: XCTestCase {
 
 
 		//assert
-		XCTAssert(isDeselectRowAtCalled)
-		XCTAssert(isDidSelectRowAtCalled)
+		XCTAssertTrue(isDeselectRowAtCalled)
+		XCTAssertTrue(isDidSelectRowAtCalled)
 	}
 }

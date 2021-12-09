@@ -16,6 +16,7 @@ final class QuotesPresenterMock: PresenterQuotesProtocol {
 	var quoteTextStub: ((IndexPath) -> String)?
 	var didSelectRowAtStub: ((Int, @escaping (() -> Void)) -> Void)?
 	var deselectRowAtStub: ((Int, @escaping (Int) -> Void) -> Void)?
+	var showAlertWithErrorStub: ((() -> Void) -> Void)?
 	
 	func didLoadView(showHUDCompletion: (() -> Void), wasSuccessFetchQuotes: @escaping (Result<Void, Error>) -> Void) {
 		didLoadViewStub?(showHUDCompletion, wasSuccessFetchQuotes)
@@ -39,5 +40,9 @@ final class QuotesPresenterMock: PresenterQuotesProtocol {
 	
 	func deselectRowAt(index: Int, deselectCompletion: @escaping (Int) -> Void) {
 		deselectRowAtStub?(index, deselectCompletion)
+	}
+
+	func showAlertWithError(completion: (() -> Void)) {
+		showAlertWithErrorStub?(completion)
 	}
 }

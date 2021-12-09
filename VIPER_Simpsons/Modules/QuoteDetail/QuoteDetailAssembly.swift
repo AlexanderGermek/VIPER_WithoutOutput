@@ -12,7 +12,7 @@ final class QuoteDetailAssembly: QuoteDetailAssemblyProtocol {
 		let router: RouterQuoteDetailProtocol = QuoteDetailRouter()
 		let interactor: InteractorQuoteDetailProtocol = QuoteDetailInteractor(
 			quote: quote,
-			serviceLocator: ServiceLocator())
+			serviceLocator: ServiceLocator.service)
 		let presenter: PresenterQuoteDetailProtocol = QuoteDetailPresenter(interactor: interactor, router: router)
 		let quoteDetailVC = QuoteDetailViewController(presenter: presenter)
 		return quoteDetailVC

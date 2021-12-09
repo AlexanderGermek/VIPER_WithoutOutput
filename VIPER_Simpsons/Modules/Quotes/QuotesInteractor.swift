@@ -11,7 +11,7 @@ final class QuotesInteractor: InteractorQuotesProtocol {
 
 	//MARK: - Properties
 	private var quotes: [Quote]?
-	private var serviceLocator: ServiceLocatorProtocol!
+	private var serviceLocator: ServiceLocatorProtocol
 
 	//MARK: - Init
 	init(serviceLocator: ServiceLocatorProtocol) {
