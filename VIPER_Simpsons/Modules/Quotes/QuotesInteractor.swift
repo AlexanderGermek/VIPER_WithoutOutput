@@ -11,7 +11,12 @@ final class QuotesInteractor: InteractorQuotesProtocol {
 
 	//MARK: - Properties
 	private var quotes: [Quote]?
-	private var serviceLocator: ServiceLocatorProtocol = ServiceLocator()
+	private var serviceLocator: ServiceLocatorProtocol!
+
+	//MARK: - Init
+	init(serviceLocator: ServiceLocatorProtocol) {
+		self.serviceLocator = serviceLocator
+	}
 
 	//MARK: - Functions
 	func loadQuotes(wasSuccessFetchQuotes: @escaping (Result<Void, Error>) -> Void) {

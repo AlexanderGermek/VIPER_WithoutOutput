@@ -11,17 +11,17 @@ import SDWebImage
 final class QuoteDetailInteractor: InteractorQuoteDetailProtocol {
 	//MARK: Properties
 	internal let quote: Quote?
-	private var serviceLocator: ServiceLocatorProtocol = ServiceLocator()
+	private var serviceLocator: ServiceLocatorProtocol!
 
 	//MARK: Init
-	init(quote: Quote) {
+	init(quote: Quote, serviceLocator: ServiceLocatorProtocol) {
 		self.quote = quote
+		self.serviceLocator = serviceLocator
 	}
 
 	//MARK: Func's
 	func getQuoteData(completion: @escaping ((QuoteDetailViewModel) -> Void)) {
 		guard let quote = quote, let imageURL = URL(string: quote.image) else { return }
-		//guard let quote = quote, let imageURL = URL(string: quote.url) else { return }
 		var image: UIImage?
 		let group = DispatchGroup()
 		group.enter()

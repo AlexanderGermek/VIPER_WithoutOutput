@@ -10,7 +10,7 @@ import UIKit
 final class QuotesAssembly: AssemblyQuotesProtocol {
 	func createModule() -> UINavigationController {
 		let router: RouterQuotesProtocol = QuotesRouter()
-		let interactor :InteractorQuotesProtocol = QuotesInteractor()
+		let interactor: InteractorQuotesProtocol = QuotesInteractor(serviceLocator: ServiceLocator())
 		let presenter: PresenterQuotesProtocol = QuotesPresenter(interactor: interactor, router: router)
 		let quotesVC = QuotesViewController(presenter: presenter)
 		let navigationController = UINavigationController(rootViewController: quotesVC)
