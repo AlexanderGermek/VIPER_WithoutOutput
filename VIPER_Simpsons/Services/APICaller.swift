@@ -10,8 +10,8 @@ import Foundation
 final class APICaller: APICallerProtocol {
 	//MARK: - Properties
 	private struct Constants {
-		static let baseURL = "https://thesimpsonsquoteapi.glitch.me" //"https://jsonplaceholder.typicode.com//"
-		static let quotes = "/quotes" //"/photos"
+		static let baseURL = "https://thesimpsonsquoteapi.glitch.me"
+		static let quotes = "/quotes"
 	}
 
 	private enum HTTPMethod: String {
