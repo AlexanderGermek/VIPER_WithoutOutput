@@ -8,5 +8,6 @@
 import Foundation
 
 protocol APICallerProtocol {
+	var urlSession: URLSession! { get set }
 	func getSimpsonQuotes(count: Int, completion: @escaping (Result<[Quote], Error>) -> Void)
 }

@@ -5,16 +5,15 @@
 //  Created by iMac on 09.12.2021.
 //
 
-import Foundation
+import UIKit
 @testable import VIPER_Simpsons
 
-final class APICallerMock: APICallerProtocol {
+final class APICallerMock: APICallerMockProtocol {
+	var urlSession: URLSession!
 
-	//var getSimpsonQuotesStub
+	var getSimpsonQuotesStub: ((Int, @escaping (Result<[Quote], Error>) -> Void) -> Void)?
 
 	func getSimpsonQuotes(count: Int, completion: @escaping (Result<[Quote], Error>) -> Void) {
-		//
+		getSimpsonQuotesStub?(count,completion)
 	}
-
-
 }

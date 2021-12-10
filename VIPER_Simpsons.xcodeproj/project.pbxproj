@@ -23,6 +23,7 @@
 		8820EA7A27625DF9006BE99F /* QuotesDetailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA7927625DF9006BE99F /* QuotesDetailInteractorTests.swift */; };
 		8820EA852762625C006BE99F /* ImageDataServiceMockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */; };
 		8820EA9227627AA4006BE99F /* ServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EA9127627AA4006BE99F /* ServicesTests.swift */; };
+		8820EAA727628B1B006BE99F /* APICallerMockProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8820EAA627628B1B006BE99F /* APICallerMockProtocol.swift */; };
 		8852DDE12753DE9E00B2F0AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DDE02753DE9E00B2F0AA /* AppDelegate.swift */; };
 		8852DDE32753DE9E00B2F0AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DDE22753DE9E00B2F0AA /* SceneDelegate.swift */; };
 		8852DDEA2753DE9F00B2F0AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8852DDE92753DE9F00B2F0AA /* Assets.xcassets */; };
@@ -41,6 +42,8 @@
 		8852DE482753DFE000B2F0AA /* QuoteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DE442753DFE000B2F0AA /* QuoteRequest.swift */; };
 		8852DE492753DFE000B2F0AA /* ImageDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DE462753DFE000B2F0AA /* ImageDataService.swift */; };
 		8852DE4A2753DFE000B2F0AA /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852DE472753DFE000B2F0AA /* APICaller.swift */; };
+		88D8902A2763383200BCE5C2 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D890292763383200BCE5C2 /* URLSessionMock.swift */; };
+		88D890382763492A00BCE5C2 /* taskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D890372763492A00BCE5C2 /* taskMock.swift */; };
 		88E2F9DA275C1A99008E1C92 /* QuotesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E2F9D9275C1A99008E1C92 /* QuotesAssembly.swift */; };
 		88EF1608275E376700B5AA5A /* QuoteDetailAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF1607275E376700B5AA5A /* QuoteDetailAssembly.swift */; };
 		88EF1613275E4BE200B5AA5A /* QuoteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EF1612275E4BE200B5AA5A /* QuoteDetailViewModel.swift */; };
@@ -85,6 +88,7 @@
 		8820EA7927625DF9006BE99F /* QuotesDetailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesDetailInteractorTests.swift; sourceTree = "<group>"; };
 		8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataServiceMockProtocol.swift; sourceTree = "<group>"; };
 		8820EA9127627AA4006BE99F /* ServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTests.swift; sourceTree = "<group>"; };
+		8820EAA627628B1B006BE99F /* APICallerMockProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICallerMockProtocol.swift; sourceTree = "<group>"; };
 		8852DDDD2753DE9E00B2F0AA /* VIPER_Simpsons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_Simpsons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8852DDE02753DE9E00B2F0AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8852DDE22753DE9E00B2F0AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 		8852DE442753DFE000B2F0AA /* QuoteRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuoteRequest.swift; sourceTree = "<group>"; };
 		8852DE462753DFE000B2F0AA /* ImageDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDataService.swift; sourceTree = "<group>"; };
 		8852DE472753DFE000B2F0AA /* APICaller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		88D890292763383200BCE5C2 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		88D890372763492A00BCE5C2 /* taskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = taskMock.swift; sourceTree = "<group>"; };
 		88E2F9D9275C1A99008E1C92 /* QuotesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesAssembly.swift; sourceTree = "<group>"; };
 		88EF1607275E376700B5AA5A /* QuoteDetailAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailAssembly.swift; sourceTree = "<group>"; };
 		88EF1612275E4BE200B5AA5A /* QuoteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailViewModel.swift; sourceTree = "<group>"; };
@@ -157,12 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				8809E8C2275FDAC400268342 /* QuotesPresenterMock.swift */,
-				8820EA6127622799006BE99F /* APICallerMock.swift */,
 				8809E8CA275FDE0900268342 /* QuotesInteractorMock.swift */,
 				8820EA532761F9A6006BE99F /* ServiceLocatorMock.swift */,
 				8809E8E2275FEF9400268342 /* QuotesRouterMock.swift */,
-				8820EA6627622DA4006BE99F /* ImageDataServiceMock.swift */,
-				8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -195,6 +198,19 @@
 				8820EA7427624921006BE99F /* QuotesDetailRouterMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8820EAAB27628C05006BE99F /* ServiceMocks */ = {
+			isa = PBXGroup;
+			children = (
+				8820EA6127622799006BE99F /* APICallerMock.swift */,
+				8820EAA627628B1B006BE99F /* APICallerMockProtocol.swift */,
+				8820EA842762625C006BE99F /* ImageDataServiceMockProtocol.swift */,
+				8820EA6627622DA4006BE99F /* ImageDataServiceMock.swift */,
+				88D890292763383200BCE5C2 /* URLSessionMock.swift */,
+				88D890372763492A00BCE5C2 /* taskMock.swift */,
+			);
+			path = ServiceMocks;
 			sourceTree = "<group>";
 		};
 		8852DDD42753DE9E00B2F0AA = {
@@ -237,7 +253,7 @@
 		8852DDF62753DE9F00B2F0AA /* VIPER_SimpsonsTests */ = {
 			isa = PBXGroup;
 			children = (
-				8820EA9127627AA4006BE99F /* ServicesTests.swift */,
+				88D890282763380F00BCE5C2 /* ServicesTests */,
 				8809E8E7275FF46100268342 /* QuotesTests */,
 				8809E8E8275FF46F00268342 /* QuotesDetailTests */,
 				8852DDF92753DE9F00B2F0AA /* Info.plist */,
@@ -308,6 +324,15 @@
 				88EF1628275E61B800B5AA5A /* APICallerProtocol.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		88D890282763380F00BCE5C2 /* ServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				8820EAAB27628C05006BE99F /* ServiceMocks */,
+				8820EA9127627AA4006BE99F /* ServicesTests.swift */,
+			);
+			path = ServicesTests;
 			sourceTree = "<group>";
 		};
 		88EF1618275E60EC00B5AA5A /* Common */ = {
@@ -531,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8820EA6227622799006BE99F /* APICallerMock.swift in Sources */,
+				88D8902A2763383200BCE5C2 /* URLSessionMock.swift in Sources */,
 				8809E8D0275FE05E00268342 /* QuotesViewControllerTests.swift in Sources */,
 				8820EA542761F9A6006BE99F /* ServiceLocatorMock.swift in Sources */,
 				8809E8C3275FDAC400268342 /* QuotesPresenterMock.swift in Sources */,
@@ -545,6 +571,8 @@
 				8809E8CB275FDE0900268342 /* QuotesInteractorMock.swift in Sources */,
 				8820EA6727622DA4006BE99F /* ImageDataServiceMock.swift in Sources */,
 				8820EA7527624921006BE99F /* QuotesDetailRouterMock.swift in Sources */,
+				88D890382763492A00BCE5C2 /* taskMock.swift in Sources */,
+				8820EAA727628B1B006BE99F /* APICallerMockProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

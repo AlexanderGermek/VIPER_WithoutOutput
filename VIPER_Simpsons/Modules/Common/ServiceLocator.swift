@@ -10,5 +10,5 @@ import Foundation
 final class ServiceLocator: ServiceLocatorProtocol {
 	static var service = ServiceLocator()
 	lazy var imageDataService: ImageDataServiceProtocol = ImageDataService()
-	lazy var apiCaller: APICallerProtocol = APICaller()
+	lazy var apiCaller: APICallerProtocol = APICaller(urlSession: URLSession.shared)
 }

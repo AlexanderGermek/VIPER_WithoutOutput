@@ -8,7 +8,10 @@
 import Foundation
 
 final class APICaller: APICallerProtocol {
+
 	//MARK: - Properties
+	internal var urlSession: URLSession!
+
 	private struct Constants {
 		static let baseURL = "https://thesimpsonsquoteapi.glitch.me"
 		static let quotes = "/quotes"
@@ -25,13 +28,17 @@ final class APICaller: APICallerProtocol {
 		case failedToGetData
 	}
 
+	init(urlSession: URLSession) {
+		self.urlSession = urlSession
+	}
+
 	//MARK: - Public func's
 	public func getSimpsonQuotes(count: Int, completion: @escaping (Result<[Quote], Error>) -> Void) {
 		guard let url = URL(string: Constants.baseURL + Constants.quotes + "?count=\(count)") else {
 			return
 		}
 
-		let task = URLSession.shared.dataTask(with: url) { data, _, error in
+		let task = urlSession.dataTask(with: url) { data, _, error in
 			guard let data = data, error == nil else {
 				completion(.failure(APICallerErrors.failedToGetData))
 				return
